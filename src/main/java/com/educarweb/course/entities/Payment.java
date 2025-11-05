@@ -25,6 +25,7 @@ public class Payment implements Serializable {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
 	private Instant moment;
+	
 	@JsonIgnore
 	@OneToOne
 	@MapsId
